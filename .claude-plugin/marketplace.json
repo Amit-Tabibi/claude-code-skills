@@ -1,5 +1,8 @@
 {
   "name": "amit-tabibi",
+  "metadata": {
+    "description": "Amit Tabibi's Claude Code skills — tools for ending working sessions cleanly."
+  },
   "owner": {
     "name": "Amit Tabibi",
     "url": "https://github.com/Amit-Tabibi"
