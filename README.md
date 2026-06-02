@@ -41,22 +41,45 @@ Trigger it with phrases like *"save before I clear"*, *"persist this into the re
 
 ## Install
 
-Skills live in `~/.claude/skills/`. Clone this repo and symlink (recommended — `git pull` keeps them current):
+### Option 1 — Plugin (recommended, no terminal needed)
+
+Inside Claude Code, type these two commands:
+
+```
+/plugin marketplace add Amit-Tabibi/claude-code-session-skills
+/plugin install session-skills@amit-tabibi
+```
+
+That's it — no git, no symlinks, no files to move. The skills install instantly and you can enable/disable or update them anytime from `/plugin`.
+
+### Option 2 — Just ask Claude to install them
+
+Open Claude Code in any folder and paste:
+
+> Install the skills from https://github.com/Amit-Tabibi/claude-code-session-skills into my `~/.claude/skills` folder.
+
+Claude clones the repo and copies the skills for you.
+
+### Option 3 — Manual (for developers who want `git pull` to auto-update)
+
+Skills live in `~/.claude/skills/`. Clone and symlink so a `git pull` keeps them current:
 
 ```bash
 git clone https://github.com/Amit-Tabibi/claude-code-session-skills.git
 cd claude-code-session-skills
+mkdir -p ~/.claude/skills
 ln -s "$PWD/skills/session-handoff" ~/.claude/skills/session-handoff
 ln -s "$PWD/skills/session-save"    ~/.claude/skills/session-save
 ```
 
-Or just copy them in (no symlink):
+Or just copy them in (no symlink, no auto-update):
 
 ```bash
+mkdir -p ~/.claude/skills
 cp -R skills/session-handoff skills/session-save ~/.claude/skills/
 ```
 
-Restart Claude Code (or start a new session). Verify they loaded by asking for a *"session handoff"* — the `session-handoff` skill should trigger.
+Either way, verify they loaded by asking for a *"session handoff"* — the `session-handoff` skill should trigger.
 
 ## Notes
 

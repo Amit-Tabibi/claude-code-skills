@@ -1,0 +1,14 @@
+{
+  "name": "amit-tabibi",
+  "owner": {
+    "name": "Amit Tabibi",
+    "url": "https://github.com/Amit-Tabibi"
+  },
+  "plugins": [
+    {
+      "name": "session-skills",
+      "source": "./",
+      "description": "Two complementary skills for ending a Claude Code session cleanly: session-handoff and session-save."
+    }
+  ]
+}

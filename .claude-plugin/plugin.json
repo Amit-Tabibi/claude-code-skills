@@ -1,0 +1,11 @@
+{
+  "name": "session-skills",
+  "description": "Two complementary skills for ending a Claude Code session cleanly: session-handoff (in-chat handoff for a fresh context) and session-save (persist decisions into your project's own files).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amit Tabibi",
+    "url": "https://github.com/Amit-Tabibi"
+  },
+  "homepage": "https://github.com/Amit-Tabibi/claude-code-session-skills",
+  "license": "MIT"
+}
