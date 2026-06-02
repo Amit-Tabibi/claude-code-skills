@@ -44,7 +44,7 @@ Trigger it with phrases like *"save before I clear"*, *"persist this into the re
 Skills live in `~/.claude/skills/`. Clone this repo and symlink (recommended — `git pull` keeps them current):
 
 ```bash
-git clone https://github.com/<your-username>/claude-session-skills.git
+git clone https://github.com/Amit-Tabibi/claude-session-skills.git
 cd claude-session-skills
 ln -s "$PWD/skills/session-handoff" ~/.claude/skills/session-handoff
 ln -s "$PWD/skills/session-save"    ~/.claude/skills/session-save
