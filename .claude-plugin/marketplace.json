@@ -1,7 +1,7 @@
 {
   "name": "amit-tabibi",
   "metadata": {
-    "description": "Amit Tabibi's Claude Code skills — tools for ending working sessions cleanly."
+    "description": "Amit Tabibi's Claude Code skills — a growing collection, each plugin installable on its own."
   },
   "owner": {
     "name": "Amit Tabibi",
@@ -10,8 +10,13 @@
   "plugins": [
     {
       "name": "session-skills",
-      "source": "./",
-      "description": "Two complementary skills for ending a Claude Code session cleanly: session-handoff and session-save."
+      "source": "./plugins/session-skills",
+      "description": "Two complementary skills for ending a Claude Code session cleanly: session-handoff (in-chat handoff for a fresh context) and session-save (persist decisions into your project's own files)."
+    },
+    {
+      "name": "fable-prompt",
+      "source": "./plugins/fable-prompt",
+      "description": "Turns a rough ask into a finished, lean prompt optimized for Claude Fable 5 / Mythos 5, distilled from Anthropic's official Fable 5 prompting guide."
     }
   ]
 }

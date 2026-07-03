@@ -1,0 +1,11 @@
+{
+  "name": "fable-prompt",
+  "description": "A skill that turns a rough ask into a finished, lean prompt optimized for Claude Fable 5 / Mythos 5 — distilled from Anthropic's official Fable 5 prompting guide.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amit Tabibi",
+    "url": "https://github.com/Amit-Tabibi"
+  },
+  "homepage": "https://github.com/Amit-Tabibi/claude-code-skills/tree/main/plugins/fable-prompt",
+  "license": "MIT"
+}
